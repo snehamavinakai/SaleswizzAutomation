@@ -44,7 +44,7 @@ public class LocatorsJava {
 
     public static String profileEmailInput = "//input[@formcontrolname='email']";
 
-    public static String addBtn = "//button/span[@class='mdc-button__label'][text()='Add']";
+    public static String addBtn = "//span[text()='Add']";
 
     public static String catalogueGroupBtn = "//div/span/div[@class='text-sm'][text()='Catalogue group']";
 
