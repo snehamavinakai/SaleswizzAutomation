@@ -16,7 +16,7 @@ public class Main extends TestFile {
 
     @BeforeTest
     public void beforeTest() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get(URL);
         driver.manage().window().maximize();
     }

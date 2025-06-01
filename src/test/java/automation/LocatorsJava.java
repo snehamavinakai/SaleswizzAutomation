@@ -131,12 +131,15 @@ public class LocatorsJava {
 
     public static String s1 = "//div[text()='Sanji']";
 
-    public static String orderValue = "//mat-label[contains(text(),'Order Value')]/ancestor::mat-form-field//input";
+    //public static String orderValue = "//mat-label[contains(text(),'Order Value')]/ancestor::mat-form-field//input";
+    public static String orderValue = "//div/input[@formcontrolname='value']";
 
 
-    //public static String orderDate = "//input[@id='mat-input-18']/following::button[1]";
+    public static String orderDate = "//div/input[@formcontrolname='edd']";
 
-    public static String selectDate =  "//div[contains(@class,'mat-calendar-body-today')]";
+    //public static String selectDate =  "//mat-label[contains(text(),'Expected Delivery Date')]/ancestor::mat-form-field//input";
+//    public static String selectDate =  "";
+    public static String selectDate =  "//button/span[text()=' 6 ']";
 
     public static String forward = "//span[text()='Forward']";
 

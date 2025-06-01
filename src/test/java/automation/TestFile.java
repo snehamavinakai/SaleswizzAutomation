@@ -46,8 +46,10 @@ public class TestFile extends LocatorsJava {
         driver.findElement(By.xpath(verifyOTPBtn)).click();
     }
 
-    public void addCatalogueGroupDetails(WebDriver driver) {
-        driver.findElement(By.xpath(addBtn)).click();
+    public void addCatalogueGroupDetails(WebDriver driver) throws InterruptedException {
+        //driver.findElement(By.xpath(addBtn)).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(addBtn))).click();
         driver.findElement(By.xpath(catalogueGroupBtn)).click();
         String filePath = "C:\\Users\\PC\\Desktop\\SalesWizz\\j1.jpg";
         WebElement fileUpload = driver.findElement(By.xpath(uploadPhotoEditIcon1));
@@ -57,7 +59,9 @@ public class TestFile extends LocatorsJava {
 
         List<WebElement> radioButtons = driver.findElements(By.xpath(allRadioBtns));
         for (int i = 0; i < radioButtons.size()-2; i++) {
+            Thread.sleep(1000);
             radioButtons.get(i).click();
+//            Thread.sleep(1000);
             radioButtons.get(i).click();
         }
 
@@ -69,6 +73,7 @@ public class TestFile extends LocatorsJava {
         driver.findElement(By.xpath(otherFields2)).sendKeys("Hello");
         driver.findElement(By.xpath(whiteListRadio)).click();
         driver.findElement(By.xpath(createBtn)).click();
+        Thread.sleep(1000);
         driver.findElement(By.xpath(confirmNoBtn)).click();
 
     }
@@ -134,8 +139,19 @@ public class TestFile extends LocatorsJava {
         driver.findElement(By.xpath(supplier1)).click();
         driver.findElement(By.xpath(s1)).click();
         //Thread.sleep(1000);
-        driver.findElement(By.id(orderValue)).sendKeys("500");
+//        driver.findElement(By.id(orderValue)).sendKeys("500");
        // driver.findElement(By.xpath(orderDate)).click();
+//        driver.findElement(By.xpath(selectDate)).click();
+        //Thread.sleep(1000);
+
+//        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.xpath(orderValue))).click();
+
+//        driver.findElement(By.xpath(orderValue)).click();
+        driver.findElement(By.xpath(orderValue)).sendKeys("500");
+         driver.findElement(By.xpath(orderDate)).sendKeys("02/06/2025");;
+
+//        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.xpath(selectDate))).click();
+//        driver.findElement(By.xpath(selectDate)).click();
         driver.findElement(By.xpath(selectDate)).click();
         driver.findElement(By.xpath(forward)).click();
 
