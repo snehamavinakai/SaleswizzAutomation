@@ -13,7 +13,7 @@ public class LocatorsJava {
     public static String contactLink = "//a[@href='/contact-us']";
 
 
-
+//    Login
     public String startNowBtn = "//button[@class='primary-btn'][text()='Start now!']";
 
     public static String phoneInput = "//input[@formcontrolname='phoneNo']";
@@ -24,26 +24,7 @@ public class LocatorsJava {
 
     public static String verifyOTPBtn = "//span[text()='Verify OTP']";
 
-    public static String dashboardBtn = "//div[text()='Dashboard']";
-
-    public static String menuDropDown = "//div[@aria-haspopup='menu']/div[contains(@class, 'icon dropdown-icon')]";
-
-    public static String myProfileBtn = "//div[text()='My Profile']";
-
-    public static String uploadPhotoEditIcon = "//div[@class='w-full h-full icon action-icon edit-icon']";
-
-    public static String profileNameEdit = "//input[@formcontrolname='name']";
-
-    public static String profileCompanyNameEdit = "//input[@formcontrolname='companyName']";
-
-    public static String profileAbout = "//textarea[@formcontrolname='about']";
-
-    public static String profileCurrencySelectDropDown = "//mat-select[@role='combobox'][@formcontrolname='currency']";
-
-    public static String profileRupeesOption = "//mat-option/span[contains(text(), 'Rupees')]";
-
-    public static String profileEmailInput = "//input[@formcontrolname='email']";
-
+//    CatalogGroup
     public static String addBtn = "//span[text()='Add']";
 
     public static String catalogueGroupBtn = "//div/span/div[@class='text-sm'][text()='Catalogue group']";
@@ -70,10 +51,10 @@ public class LocatorsJava {
 
     public static String createBtn = "//span[text()='Create']";
 
-    public static String confirmYesBtn = "//span[text()='Yes']";
-
     public static String confirmNoBtn = "//button[text()='No']";
 
+
+//    Catalog
     public static String catalogueBtn = "//div/span/div[@class='text-sm'][text()='Catalogue']";
 
     public static String uploadPhotoEditIcon2 = "//input[@type='file']";
@@ -84,11 +65,8 @@ public class LocatorsJava {
 
     public static String privacyPublic = "//div[@formgroupname='settings']/label/span[text()='Public']";
 
-    //public static String myCataloguesBtn = "//div[text()='My Catalogues']";
 
-    //public static String addToCatalogues = "//table/tbody/tr/td[6]/div/action-button[1]";
-
-
+//    CatalogPage
     public static String addProductButton = "//button/span/span[@class='px-4'][text()=' Add Product']";
 
     public static String uploadImage = "//input[@type='file']";
@@ -109,8 +87,6 @@ public class LocatorsJava {
 
     public static String productAvailability = "//span[text()=' Availability ']";
 
-//    public static String productInStock = "//*[@id='cdk-accordion-child-1']/div/div/div[1]/div";
-
     public static String productOutOfStock = "//label[text()=' Out of Stock ']";
 
     public static String productApply = "//button/span[text()='Apply']";
@@ -119,11 +95,13 @@ public class LocatorsJava {
 
     public static String productManageInventory = "//button/div[@class='w-full h-full icon action-icon manageInventory-icon']";
 
-//    public static String productMnKg = "//*[@id='mat-input-14']";
-
-//    public static String productMnSubBtn = "//span[text()='Submit']";
-
     public static String forwardToSupplier = "//button/div[@class='w-full h-full icon action-icon forwardOrder-icon']";
+
+    public static String productShareBtn = "//span[text()='Share']";
+
+    public static String productShareLink = "//p[text()='Copy Link']";
+
+    public static String productShareClose = "//div[@class='w-6 h-6 icon close-icon bg-black']";
 
     public static String searchSupplier = "//mat-label[text()='Search Supplier']";
 
@@ -131,31 +109,13 @@ public class LocatorsJava {
 
     public static String s1 = "//div[text()='Sanji']";
 
-    //public static String orderValue = "//mat-label[contains(text(),'Order Value')]/ancestor::mat-form-field//input";
     public static String orderValue = "//div/input[@formcontrolname='value']";
-
 
     public static String orderDate = "//div/input[@formcontrolname='edd']";
 
-    //public static String selectDate =  "//mat-label[contains(text(),'Expected Delivery Date')]/ancestor::mat-form-field//input";
-//    public static String selectDate =  "";
     public static String selectDate =  "//button/span[text()=' 6 ']";
 
     public static String forward = "//span[text()='Forward']";
-
-
-
-    public static String productDesc = "//textarea[@id='mat-input-11']";
-
-    public static String productExpire = "//div[@id='mat-select-value-15']";
-
-    public static String productExpireOption = "//mat-option[@id='mat-option-41']";
-
-    public static String productShareBtn = "//span[text()='Share']";
-
-    public static String productShareLink = "//p[text()='Copy Link']";
-
-    public static String productShareClose = "//div[@class='w-6 h-6 icon close-icon bg-black']";
 
     public static String productImage = "//img[@class='w-full h-full object-contain cursor-grab']";
 
@@ -205,5 +165,32 @@ public class LocatorsJava {
 
     public static String supplierDropDown = "//span[text()='Sanji (+918956237478)']";
 
+    public static String dashboardBtn = "//div[text()='Dashboard']";
+
+    public static String menuDropDown = "//div[@aria-haspopup='menu']/div[contains(@class, 'icon dropdown-icon')]";
+
+    public static String myProfileBtn = "//div[text()='My Profile']";
+
+    public static String uploadPhotoEditIcon = "//div[@class='w-full h-full icon action-icon edit-icon']";
+
+    public static String profileNameEdit = "//input[@formcontrolname='name']";
+
+    public static String profileCompanyNameEdit = "//input[@formcontrolname='companyName']";
+
+    public static String profileAbout = "//textarea[@formcontrolname='about']";
+
+    public static String profileCurrencySelectDropDown = "//mat-select[@role='combobox'][@formcontrolname='currency']";
+
+    public static String profileRupeesOption = "//mat-option/span[contains(text(), 'Rupees')]";
+
+    public static String profileEmailInput = "//input[@formcontrolname='email']";
+
+    public static String confirmYesBtn = "//span[text()='Yes']";
+
+    public static String productDesc = "//textarea[@id='mat-input-11']";
+
+    public static String productExpire = "//div[@id='mat-select-value-15']";
+
+    public static String productExpireOption = "//mat-option[@id='mat-option-41']";
 
 }

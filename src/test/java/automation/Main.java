@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class Main extends TestFile {
     public static WebDriver driver = new ChromeDriver();
@@ -23,12 +22,9 @@ public class Main extends TestFile {
 
     @Test
     public void test() throws InterruptedException {
-        //Scroll(driver);
-        //homePage(driver);
         login(driver);
         addCatalogueGroupDetails(driver);
         addCatalogueDetails(driver);
-        //productDetails(driver);
     }
 
     @AfterTest
